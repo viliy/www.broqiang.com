@@ -4,8 +4,7 @@
     </div>
     <div class="card-body">
         <article class="text-muted">
-            博客正式从原来的 Github Page 迁移到这里，原本的内容可以通过 
-            <a class="text-info" href="https://broqiang.github.io" target="_blank">broqiang.github.io</a> 访问
+            我要一步一步往上爬
         </article>
     </div>
 </div>

@@ -23,7 +23,7 @@ return [
     'max_size'         => 2048,
 
     // 上传类型： local-本地，qiniu-七牛云
-    'upload_type'      => 'qiniu',
+    'upload_type'      => 'local',
 
     // 七牛云相关的配置
     // 七牛的 access key 和 secret key 可以到个人中心的密钥管理中获得

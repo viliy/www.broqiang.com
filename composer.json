@@ -1,7 +1,7 @@
 {
-    "name": "broqiang/laravel-blog",
+    "name": "zhaqq/laravel-blog",
     "description": "Laravel 开发的个人博客",
-    "keywords": ["broqiang", "blog", "laravel"],
+    "keywords": ["zhaqq", "blog", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {

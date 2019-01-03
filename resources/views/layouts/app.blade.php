@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name=”keywords” Content=”PHP,Linux,Laravel,Go,博客,BroQiang″>
-    <meta name="description" content="Bro Qiang 博客">
-    <meta name="author" content="Bro Qiang<broqiang@qq.com>">
+    <meta name=”keywords” Content=”PHP,Linux,Laravel,Go,博客,Zhaqq″>
+    <meta name="description" content="Zhaqq 博客">
+    <meta name="author" content="Zhaqq<34485431@qq.com>">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

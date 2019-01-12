@@ -52,7 +52,7 @@
         color: '38,121,210',
         pointColor: '228,222,29',
         opacity: '0.8',
-        count: 500,
+        count: 800,
     });
 </script>
 @yield('script')

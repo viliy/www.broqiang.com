@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" >
 
 <head>
     <meta charset="utf-8">
@@ -14,32 +14,50 @@
     <title>@yield('title','title') - {{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
     @yield('css')
+    <style>
+        body {
+            position: unset !important;
+        }
+    </style>
+
 </head>
 
-<body>
-    <div id="app" class="{{ route_class() }}-page">
-        @include('layouts._header')
-        <header class="bs-docs-nav navbar navbar-static-top" id="top"></header>
+<body id="canvas-boom" style="position: unset !important;">
+<div id="app" class="{{ route_class() }}-page">
+    @include('layouts._header')
+    <header class="bs-docs-nav navbar navbar-static-top" id="top"></header>
 
-        <main class="py-4">
-            
-            @include('common._error')
-            @include('common._message')
+    <main class="py-4">
 
-            @yield('content')
+        @include('common._error')
+        @include('common._message')
 
-        </main>
-        <div style="position:fixed; right:50px; bottom:80px;"><a href="#top" class="btn btn-outline-info">返回顶部</a></div>
-        @include('layouts._footer')
-    </div>
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+        @yield('content')
 
-    @yield('script')
+    </main>
+    <div style="position:fixed; right:50px; bottom:80px;"><a href="#top" class="btn btn-outline-info">返回顶部</a></div>
+    @include('layouts._footer')
+</div>
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
+{{--<script src="{{ asset('js/jquery.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/boom.js') }}"></script>--}}
+{{--<script src="{{ asset('js/canvas.js') }}"></script>--}}
+<script src="{{ asset('js/canvas-umd.js') }}"></script>
 
-    @include('layouts._baidutongji')
+<script>
+    var cn = new CanvasNest(document.getElementById('canvas-boom'), {
+        color: '38,121,210',
+        pointColor: '228,222,29',
+        opacity: '0.8',
+        count: 500,
+    });
+</script>
+@yield('script')
+
+@include('layouts._baidutongji')
 </body>
 
 </html>

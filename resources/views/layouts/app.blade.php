@@ -45,16 +45,16 @@
 {{--<script src="{{ asset('js/jquery.min.js') }}"></script>--}}
 {{--<script src="{{ asset('js/boom.js') }}"></script>--}}
 {{--<script src="{{ asset('js/canvas.js') }}"></script>--}}
-<script src="{{ asset('js/canvas-umd.js') }}"></script>
+{{--<script src="{{ asset('js/canvas-umd.js') }}"></script>--}}
 
-<script>
-    var cn = new CanvasNest(document.getElementById('canvas-boom'), {
-        color: '38,121,210',
-        pointColor: '228,222,29',
-        opacity: '0.8',
-        count: 800,
-    });
-</script>
+{{--<script>--}}
+    {{--var cn = new CanvasNest(document.getElementById('canvas-boom'), {--}}
+        {{--color: '38,121,210',--}}
+        {{--pointColor: '228,222,29',--}}
+        {{--opacity: '0.8',--}}
+        {{--count: 800,--}}
+    {{--});--}}
+{{--</script>--}}
 @yield('script')
 
 @include('layouts._baidutongji')

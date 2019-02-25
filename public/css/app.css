@@ -179,7 +179,8 @@ a:not([href]):not([tabindex]):focus {
 
 code, kbd, pre, samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1em;
+    color: #3a76d0
 }
 
 pre {

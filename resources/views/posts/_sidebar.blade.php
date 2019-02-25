@@ -4,7 +4,7 @@
     </div>
     <div class="card-body">
         <article class="text-muted">
-            我要一步一步往上爬
+            君子不器 庸人不扰
         </article>
     </div>
 </div>

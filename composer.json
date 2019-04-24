@@ -6,8 +6,10 @@
     "type": "project",
     "require": {
         "php": ">=7.1.0",
+        "ext-redis": "*",
         "broqiang/laravel-image": "1.0.*",
         "broqiang/laravel-markdown": "1.0.*",
+        "calebporzio/gitdown": "^1.3",
         "fideloper/proxy": "~4.0",
         "guzzlehttp/guzzle": "~6.3",
         "hieu-le/active": "~3.5",

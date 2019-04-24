@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Bus\Parser;
 use App\Models\Post;
 use BroQiang\LaravelMarkdown\Markdown;
+use GitDown\Facades\GitDown;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,11 +27,11 @@ class PostsController extends Controller
         return view('posts.index', compact('posts'));
     }
 
-    public function show(Post $post, Parser $markdown, Request $request)
+    public function show(Post $post, Request $request)
     {
         $post->visit($request);
 
-        $post->body = $markdown->makeHtml($post->body);
+        $post->body = GitDown::parseAndCache($post->body);
 
         return view('posts.show', compact('post'));
     }

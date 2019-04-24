@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4617ea65de91bfb428e3f0756c15efce",
+    "content-hash": "af6b2bd42c96c40eea6d29fb5e4c6382",
     "packages": [
         {
             "name": "broqiang/laravel-image",
@@ -124,6 +124,66 @@
                 "markdown"
             ],
             "time": "2018-04-21T17:28:45+00:00"
+        },
+        {
+            "name": "calebporzio/gitdown",
+            "version": "v1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/calebporzio/gitdown.git",
+                "reference": "a5f7cd2dddec314360d1586f7d3e9c9401a474d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/calebporzio/gitdown/zipball/a5f7cd2dddec314360d1586f7d3e9c9401a474d4",
+                "reference": "a5f7cd2dddec314360d1586f7d3e9c9401a474d4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "kitetail/zttp": "^0.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "GitDown\\GitDownServiceProvider"
+                    ],
+                    "aliases": {
+                        "GitDown": "GitDown\\Facades\\GitDown"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GitDown\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A simple package to parse Github Flavored Markdown in PHP",
+            "homepage": "https://github.com/calebporzio/gitdown",
+            "keywords": [
+                "calebporzio",
+                "gitdown"
+            ],
+            "time": "2019-03-06T20:04:56+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1025,6 +1085,58 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "kitetail/zttp",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kitetail/zttp.git",
+                "reference": "3875188916c746ff1a3f2b1095564aca72d973b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kitetail/zttp/zipball/3875188916c746ff1a3f2b1095564aca72d973b8",
+                "reference": "3875188916c746ff1a3f2b1095564aca72d973b8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": ">=7.0",
+                "tightenco/collect": "^5.4"
+            },
+            "require-dev": {
+                "laravel/lumen-framework": "5.5.*",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Zttp.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "A developer-experience focused HTTP client, optimized for most common use cases.",
+            "keywords": [
+                "Guzzle",
+                "http"
+            ],
+            "time": "2018-03-11T19:39:08+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3449,6 +3561,62 @@
             "time": "2018-11-25T12:50:42+00:00"
         },
         {
+            "name": "tightenco/collect",
+            "version": "v5.8.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/collect.git",
+                "reference": "d1d78dbdd8884c35a79f9750743177297e7f31a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/d1d78dbdd8884c35a79f9750743177297e7f31a9",
+                "reference": "d1d78dbdd8884c35a79f9750743177297e7f31a9",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/var-dumper": ">=3.4 <5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "nesbot/carbon": "^1.26.3",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collect/Support/helpers.php",
+                    "src/Collect/Support/alias.php"
+                ],
+                "psr-4": {
+                    "Tightenco\\Collect\\": "src/Collect"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2019-04-18T18:52:05+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
             "source": {
@@ -5751,7 +5919,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "ext-redis": "*"
     },
     "platform-dev": []
 }

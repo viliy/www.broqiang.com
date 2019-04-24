@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bus\Parser;
 use App\Models\Post;
 use BroQiang\LaravelMarkdown\Markdown;
 use Illuminate\Http\Request;
@@ -25,11 +26,11 @@ class PostsController extends Controller
         return view('posts.index', compact('posts'));
     }
 
-    public function show(Post $post, Markdown $markdown, Request $request)
+    public function show(Post $post, Parser $markdown, Request $request)
     {
         $post->visit($request);
 
-        $post->body = $markdown->convertMarkdownToHtml($post->body);
+        $post->body = $markdown->makeHtml($post->body);
 
         return view('posts.show', compact('post'));
     }

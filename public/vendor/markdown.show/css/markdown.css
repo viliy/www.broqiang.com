@@ -662,7 +662,7 @@
     overflow: visible;
     line-height: inherit;
     word-wrap: normal;
-    color: #1a6773;
+    /*color: #1a6773;*/
     background-color: transparent;
     border: 0;
 }
@@ -719,11 +719,11 @@
 }
 
 .hljs-keyword, .hljs-selector-tag, .hljs-tag {
-    color: #e3ceab
+    color: #e3ad0d
 }
 
 .hljs-template-tag {
-    color: #dcdcdc
+    color: #3a8ddc
 }
 
 .hljs-number {
@@ -735,7 +735,7 @@
 }
 
 .hljs-literal {
-    color: #efefaf
+    color: #efb73b
 }
 
 .hljs-subst {
@@ -743,19 +743,19 @@
 }
 
 .hljs-name, .hljs-section, .hljs-selector-class, .hljs-selector-id, .hljs-title, .hljs-type {
-    color: #efef8f
+    color: #e42edd
 }
 
 .hljs-bullet, .hljs-link, .hljs-symbol {
-    color: #dca3a3
+    color: #dc8d91
 }
 
 .hljs-built_in, .hljs-builtin-name, .hljs-deletion, .hljs-string {
-    color: #cc9393
+    color: #cc8772
 }
 
 .hljs-addition, .hljs-comment, .hljs-meta, .hljs-quote {
-    color: #7f9f7f
+    color: #449f44
 }
 
 .hljs-emphasis {
@@ -1044,4 +1044,2363 @@
     -webkit-box-align: initial;
     -ms-flex-align: initial;
     align-items: initial
+}
+
+
+.article-content :not(pre) > code[class*=language-], .article-content pre[class*=language-], .editor-preview-active-side pre, .editor-preview pre, .markdown-body pre {
+    /*margin: 1.5em -35px;*/
+    border-radius: 0;
+    padding: 1.5em 35px
+}
+
+.ui.segment.markdown-body, .ui.segments .segment {
+    font-size: 15px;
+    margin: 0
+}
+
+.editor-preview, .markdown-body, .markdown-reply {
+    overflow: visible
+}
+
+.editor-preview, .editor-preview-active-side, .markdown-body, .markdown-reply {
+    font-size: 15px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.4;
+    line-height: 1.6;
+    word-wrap: break-word
+}
+
+.editor-preview-active-side a, .editor-preview a, .markdown-body a, .markdown-reply a {
+    background: transparent
+}
+
+.editor-preview-active-side a:active, .editor-preview-active-side a:hover, .editor-preview a:active, .editor-preview a:hover, .markdown-body a:active, .markdown-body a:hover, .markdown-reply a:active, .markdown-reply a:hover {
+    outline: 0
+}
+
+.editor-preview-active-side ol li, .editor-preview ol li, .markdown-body ol li, .markdown-reply ol li {
+    margin: 8px 0
+}
+
+.editor-preview-active-side strong, .editor-preview strong, .markdown-body strong, .markdown-reply strong {
+    font-weight: 700
+}
+
+.editor-preview-active-side h1, .editor-preview h1, .markdown-body h1, .markdown-reply h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+.editor-preview-active-side img, .editor-preview img, .markdown-body img, .markdown-reply img {
+    border: 0
+}
+
+.editor-preview-active-side hr, .editor-preview hr, .markdown-body hr, .markdown-reply hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+.editor-preview-active-side table, .editor-preview table, .markdown-body table, .markdown-reply table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.editor-preview-active-side td, .editor-preview-active-side th, .editor-preview td, .editor-preview th, .markdown-body td, .markdown-body th, .markdown-reply td, .markdown-reply th {
+    padding: 0
+}
+
+.editor-preview *, .editor-preview-active-side *, .markdown-body *, .markdown-reply * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.editor-preview-active-side a, .editor-preview-active-side a:active, .editor-preview-active-side a:focus, .editor-preview-active-side a:hover, .editor-preview a, .editor-preview a:active, .editor-preview a:focus, .editor-preview a:hover, .markdown-body a, .markdown-body a:active, .markdown-body a:focus, .markdown-body a:hover, .markdown-reply a, .markdown-reply a:active, .markdown-reply a:focus, .markdown-reply a:hover {
+    text-decoration: none
+}
+
+.editor-preview-active-side hr, .editor-preview hr, .markdown-body hr, .markdown-reply hr {
+    height: 0;
+    overflow: hidden;
+    background: transparent;
+    border: 2px dashed #f0f4f6;
+    border-bottom: 0;
+    margin: 18px auto;
+    width: 50%
+}
+
+.editor-preview-active-side hr:after, .editor-preview-active-side hr:before, .editor-preview hr:after, .editor-preview hr:before, .markdown-body hr:after, .markdown-body hr:before, .markdown-reply hr:after, .markdown-reply hr:before {
+    display: table;
+    content: " "
+}
+
+.editor-preview-active-side hr:after, .editor-preview hr:after, .markdown-body hr:after, .markdown-reply hr:after {
+    clear: both
+}
+
+.editor-preview-active-side h1, .editor-preview-active-side h2, .editor-preview-active-side h3, .editor-preview-active-side h4, .editor-preview-active-side h5, .editor-preview-active-side h6, .editor-preview h1, .editor-preview h2, .editor-preview h3, .editor-preview h4, .editor-preview h5, .editor-preview h6, .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6, .markdown-reply h1, .markdown-reply h2, .markdown-reply h3, .markdown-reply h4, .markdown-reply h5, .markdown-reply h6 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    font-weight: 400
+}
+
+.editor-preview-active-side h1, .editor-preview h1, .markdown-body h1, .markdown-reply h1 {
+    font-size: 30px
+}
+
+.editor-preview-active-side h2, .editor-preview h2, .markdown-body h2, .markdown-reply h2 {
+    font-size: 21px
+}
+
+.editor-preview-active-side h3, .editor-preview h3, .markdown-body h3, .markdown-reply h3 {
+    font-size: 16px
+}
+
+.editor-preview-active-side h4, .editor-preview h4, .markdown-body h4, .markdown-reply h4 {
+    font-size: 14px
+}
+
+.editor-preview-active-side h5, .editor-preview h5, .markdown-body h5, .markdown-reply h5 {
+    font-size: 12px
+}
+
+.editor-preview-active-side h6, .editor-preview h6, .markdown-body h6, .markdown-reply h6 {
+    font-size: 11px
+}
+
+.editor-preview-active-side blockquote, .editor-preview blockquote, .markdown-body blockquote, .markdown-reply blockquote {
+    margin: 0
+}
+
+.editor-preview-active-side blockquote ol:last-child, .editor-preview-active-side blockquote p:last-child, .editor-preview-active-side blockquote ul:last-child, .editor-preview blockquote ol:last-child, .editor-preview blockquote p:last-child, .editor-preview blockquote ul:last-child, .markdown-body blockquote ol:last-child, .markdown-body blockquote p:last-child, .markdown-body blockquote ul:last-child, .markdown-reply blockquote ol:last-child, .markdown-reply blockquote p:last-child, .markdown-reply blockquote ul:last-child {
+    margin-bottom: 0
+}
+
+.editor-preview-active-side ol, .editor-preview-active-side ul, .editor-preview ol, .editor-preview ul, .markdown-body ol, .markdown-body ul, .markdown-reply ol, .markdown-reply ul {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.editor-preview-active-side ol ol, .editor-preview ol ol, .markdown-body ol ol, .markdown-reply ol ol {
+    list-style-type: lower-roman
+}
+
+.editor-preview-active-side dd, .editor-preview dd, .markdown-body dd, .markdown-reply dd {
+    margin-left: 0
+}
+
+.editor-preview-active-side code, .editor-preview-active-side pre, .editor-preview code, .editor-preview pre, .markdown-body code, .markdown-body pre, .markdown-reply code, .markdown-reply pre {
+    font-family: monaco, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    font-size: 1em
+}
+
+.editor-preview-active-side pre, .editor-preview pre, .markdown-body pre, .markdown-reply pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: auto
+}
+
+.editor-preview-active-side .markdown-body > :first-child, .editor-preview .markdown-body > :first-child, .markdown-body .markdown-body > :first-child, .markdown-reply .markdown-body > :first-child {
+    margin-top: 0 !important
+}
+
+.editor-preview-active-side .markdown-body > :last-child, .editor-preview .markdown-body > :last-child, .markdown-body .markdown-body > :last-child, .markdown-reply .markdown-body > :last-child {
+    margin-bottom: 0 !important
+}
+
+.editor-preview-active-side .anchor, .editor-preview .anchor, .markdown-body .anchor, .markdown-reply .anchor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding-right: 6px;
+    padding-left: 30px;
+    margin-left: -30px
+}
+
+.editor-preview-active-side .anchor:focus, .editor-preview .anchor:focus, .markdown-body .anchor:focus, .markdown-reply .anchor:focus {
+    outline: none
+}
+
+.editor-preview-active-side h1, .editor-preview-active-side h2, .editor-preview-active-side h3, .editor-preview-active-side h4, .editor-preview-active-side h5, .editor-preview-active-side h6, .editor-preview h1, .editor-preview h2, .editor-preview h3, .editor-preview h4, .editor-preview h5, .editor-preview h6, .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6, .markdown-reply h1, .markdown-reply h2, .markdown-reply h3, .markdown-reply h4, .markdown-reply h5, .markdown-reply h6 {
+    position: relative;
+    margin-top: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 700
+}
+
+.editor-preview-active-side h1, .editor-preview h1, .markdown-body h1, .markdown-reply h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee
+}
+
+.editor-preview-active-side h2, .editor-preview h2, .markdown-body h2, .markdown-reply h2 {
+    padding-bottom: .3em;
+    font-size: 1.3em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee
+}
+
+.editor-preview-active-side h3, .editor-preview h3, .markdown-body h3, .markdown-reply h3 {
+    font-size: 1.2em;
+    line-height: 1.43
+}
+
+.editor-preview-active-side h4, .editor-preview h4, .markdown-body h4, .markdown-reply h4 {
+    font-size: 1.1em
+}
+
+.editor-preview-active-side h5, .editor-preview h5, .markdown-body h5, .markdown-reply h5 {
+    font-size: 1em
+}
+
+.editor-preview-active-side h6, .editor-preview h6, .markdown-body h6, .markdown-reply h6 {
+    font-size: .9em;
+    color: #777
+}
+
+.editor-preview-active-side blockquote, .editor-preview-active-side dl, .editor-preview-active-side ol, .editor-preview-active-side p, .editor-preview-active-side pre, .editor-preview-active-side table, .editor-preview-active-side ul, .editor-preview blockquote, .editor-preview dl, .editor-preview ol, .editor-preview p, .editor-preview pre, .editor-preview table, .editor-preview ul, .markdown-body blockquote, .markdown-body dl, .markdown-body ol, .markdown-body p, .markdown-body pre, .markdown-body table, .markdown-body ul, .markdown-reply blockquote, .markdown-reply dl, .markdown-reply ol, .markdown-reply p, .markdown-reply pre, .markdown-reply table, .markdown-reply ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 30px
+}
+
+.editor-preview-active-side ol, .editor-preview-active-side ul, .editor-preview ol, .editor-preview ul, .markdown-body ol, .markdown-body ul, .markdown-reply ol, .markdown-reply ul {
+    padding-left: 2em;
+    padding: 10px 20px 10px 30px;
+    color: #7d8688
+}
+
+.editor-preview-active-side ol ol, .editor-preview-active-side ol ul, .editor-preview ol ol, .editor-preview ol ul, .markdown-body ol ol, .markdown-body ol ul, .markdown-reply ol ol, .markdown-reply ol ul {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.editor-preview-active-side li > p, .editor-preview li > p, .markdown-body li > p, .markdown-reply li > p {
+    margin-top: 16px
+}
+
+.editor-preview-active-side dl, .editor-preview dl, .markdown-body dl, .markdown-reply dl {
+    padding: 0
+}
+
+.editor-preview-active-side dl dt, .editor-preview dl dt, .markdown-body dl dt, .markdown-reply dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700
+}
+
+.editor-preview-active-side dl dd, .editor-preview dl dd, .markdown-body dl dd, .markdown-reply dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px
+}
+
+.editor-preview-active-side blockquote, .editor-preview blockquote, .markdown-body blockquote, .markdown-reply blockquote {
+    font-size: inherit;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd
+}
+
+.editor-preview-active-side blockquote code, .editor-preview blockquote code, .markdown-body blockquote code, .markdown-reply blockquote code {
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid #d1e0f3
+}
+
+.editor-preview-active-side blockquote > :first-child, .editor-preview blockquote > :first-child, .markdown-body blockquote > :first-child, .markdown-reply blockquote > :first-child {
+    margin-top: 20
+}
+
+.editor-preview-active-side blockquote > :last-child, .editor-preview blockquote > :last-child, .markdown-body blockquote > :last-child, .markdown-reply blockquote > :last-child {
+    margin-bottom: 20
+}
+
+.editor-preview-active-side blockquote, .editor-preview blockquote, .markdown-body blockquote, .markdown-reply blockquote {
+    margin: 20px 0 !important;
+    background-color: #f5f8fc;
+    padding: 1rem;
+    color: #8796a8;
+    border-left: none
+}
+
+.editor-preview-active-side table, .editor-preview table, .markdown-body table, .markdown-reply table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin: 25px 0
+}
+
+.editor-preview-active-side table th, .editor-preview table th, .markdown-body table th, .markdown-reply table th {
+    font-weight: 700
+}
+
+.editor-preview-active-side table td, .editor-preview-active-side table th, .editor-preview table td, .editor-preview table th, .markdown-body table td, .markdown-body table th, .markdown-reply table td, .markdown-reply table th {
+    padding: 6px 13px;
+    border: 1px solid #ddd
+}
+
+.editor-preview-active-side table tr, .editor-preview table tr, .markdown-body table tr, .markdown-reply table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc
+}
+
+.editor-preview-active-side table tr:nth-child(2n), .editor-preview table tr:nth-child(2n), .markdown-body table tr:nth-child(2n), .markdown-reply table tr:nth-child(2n) {
+    background-color: #f8f8f8
+}
+
+.editor-preview-active-side img, .editor-preview img, .markdown-body img, .markdown-reply img {
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.editor-preview-active-side img:not(.emoji), .editor-preview img:not(.emoji), .markdown-body img:not(.emoji), .markdown-reply img:not(.emoji) {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 0 30px #ccc;
+    box-shadow: 0 0 30px #ccc
+}
+
+.editor-preview-active-side img.rm-style, .editor-preview img.rm-style, .markdown-body img.rm-style, .markdown-reply img.rm-style {
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.editor-preview-active-side code, .editor-preview code, .markdown-body code, .markdown-reply code {
+    background: rgba(90, 87, 87, 0);
+    margin: 5px;
+    color: #858080;
+    border-radius: 4px;
+    background-color: #f9fafa;
+    border: 1px solid #e4e4e4;
+    max-width: 740px;
+    overflow-x: auto;
+    font-size: 14px;
+    padding: 1px 2px
+}
+
+.editor-preview-active-side code:after, .editor-preview-active-side code:before, .editor-preview code:after, .editor-preview code:before, .markdown-body code:after, .markdown-body code:before, .markdown-reply code:after, .markdown-reply code:before {
+    letter-spacing: -.2em;
+    content: "\A0"
+}
+
+.editor-preview-active-side pre > code, .editor-preview pre > code, .markdown-body pre > code, .markdown-reply pre > code {
+    padding: 0;
+    margin: 0;
+    white-space: pre;
+    background: transparent;
+    border: 0
+}
+
+.editor-preview-active-side .highlight, .editor-preview .highlight, .markdown-body .highlight, .markdown-reply .highlight {
+    margin-bottom: 16px
+}
+
+.editor-preview-active-side .highlight pre, .editor-preview-active-side pre, .editor-preview .highlight pre, .editor-preview pre, .markdown-body .highlight pre, .markdown-body pre, .markdown-reply .highlight pre, .markdown-reply pre {
+    padding: 14px;
+    overflow: auto;
+    line-height: 1.45;
+    border-radius: 3px;
+    color: #fff;
+    border: none
+}
+
+.editor-preview-active-side .highlight pre, .editor-preview .highlight pre, .markdown-body .highlight pre, .markdown-reply .highlight pre {
+    margin-bottom: 0
+}
+
+.editor-preview-active-side pre, .editor-preview pre, .markdown-body pre, .markdown-reply pre {
+    word-wrap: normal;
+    background: #384548;
+    border: 1px solid #efefef;
+    -webkit-box-shadow: 0 2px 5px 0 hsla(0, 0%, 78%, .16), 0 2px 10px 0 hsla(0, 0%, 95%, .12);
+    box-shadow: 0 2px 5px 0 hsla(0, 0%, 78%, .16), 0 2px 10px 0 hsla(0, 0%, 95%, .12);
+    border-radius: 3px;
+    padding: 1.5em 35px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em
+}
+
+.editor-preview-active-side pre code, .editor-preview pre code, .markdown-body pre code, .markdown-reply pre code {
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: 24px;
+    word-wrap: normal;
+    border: 0
+}
+
+.editor-preview-active-side pre code:after, .editor-preview-active-side pre code:before, .editor-preview pre code:after, .editor-preview pre code:before, .markdown-body pre code:after, .markdown-body pre code:before, .markdown-reply pre code:after, .markdown-reply pre code:before {
+    content: normal
+}
+
+.editor-preview-active-side .highlight, .editor-preview .highlight, .markdown-body .highlight, .markdown-reply .highlight {
+    background: #fff
+}
+
+.editor-preview-active-side .highlight .c, .editor-preview .highlight .c, .markdown-body .highlight .c, .markdown-reply .highlight .c {
+    color: #998;
+    font-style: italic
+}
+
+.editor-preview-active-side .highlight .err, .editor-preview .highlight .err, .markdown-body .highlight .err, .markdown-reply .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2
+}
+
+.editor-preview-active-side .highlight .k, .editor-preview-active-side .highlight .o, .editor-preview .highlight .k, .editor-preview .highlight .o, .markdown-body .highlight .k, .markdown-body .highlight .o, .markdown-reply .highlight .k, .markdown-reply .highlight .o {
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .cm, .editor-preview .highlight .cm, .markdown-body .highlight .cm, .markdown-reply .highlight .cm {
+    color: #998;
+    font-style: italic
+}
+
+.editor-preview-active-side .highlight .cp, .editor-preview .highlight .cp, .markdown-body .highlight .cp, .markdown-reply .highlight .cp {
+    color: #999;
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .c1, .editor-preview .highlight .c1, .markdown-body .highlight .c1, .markdown-reply .highlight .c1 {
+    color: #998;
+    font-style: italic
+}
+
+.editor-preview-active-side .highlight .cs, .editor-preview .highlight .cs, .markdown-body .highlight .cs, .markdown-reply .highlight .cs {
+    color: #999;
+    font-weight: 700;
+    font-style: italic
+}
+
+.editor-preview-active-side .highlight .gd, .editor-preview .highlight .gd, .markdown-body .highlight .gd, .markdown-reply .highlight .gd {
+    color: #000;
+    background-color: #fdd
+}
+
+.editor-preview-active-side .highlight .gd .x, .editor-preview .highlight .gd .x, .markdown-body .highlight .gd .x, .markdown-reply .highlight .gd .x {
+    color: #000;
+    background-color: #faa
+}
+
+.editor-preview-active-side .highlight .ge, .editor-preview .highlight .ge, .markdown-body .highlight .ge, .markdown-reply .highlight .ge {
+    font-style: italic
+}
+
+.editor-preview-active-side .highlight .gr, .editor-preview .highlight .gr, .markdown-body .highlight .gr, .markdown-reply .highlight .gr {
+    color: #a00
+}
+
+.editor-preview-active-side .highlight .gh, .editor-preview .highlight .gh, .markdown-body .highlight .gh, .markdown-reply .highlight .gh {
+    color: #999
+}
+
+.editor-preview-active-side .highlight .gi, .editor-preview .highlight .gi, .markdown-body .highlight .gi, .markdown-reply .highlight .gi {
+    color: #000;
+    background-color: #dfd
+}
+
+.editor-preview-active-side .highlight .gi .x, .editor-preview .highlight .gi .x, .markdown-body .highlight .gi .x, .markdown-reply .highlight .gi .x {
+    color: #000;
+    background-color: #afa
+}
+
+.editor-preview-active-side .highlight .go, .editor-preview .highlight .go, .markdown-body .highlight .go, .markdown-reply .highlight .go {
+    color: #888
+}
+
+.editor-preview-active-side .highlight .gp, .editor-preview .highlight .gp, .markdown-body .highlight .gp, .markdown-reply .highlight .gp {
+    color: #555
+}
+
+.editor-preview-active-side .highlight .gs, .editor-preview .highlight .gs, .markdown-body .highlight .gs, .markdown-reply .highlight .gs {
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .gu, .editor-preview .highlight .gu, .markdown-body .highlight .gu, .markdown-reply .highlight .gu {
+    color: purple;
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .gt, .editor-preview .highlight .gt, .markdown-body .highlight .gt, .markdown-reply .highlight .gt {
+    color: #a00
+}
+
+.editor-preview-active-side .highlight .kc, .editor-preview-active-side .highlight .kd, .editor-preview-active-side .highlight .kn, .editor-preview-active-side .highlight .kp, .editor-preview-active-side .highlight .kr, .editor-preview .highlight .kc, .editor-preview .highlight .kd, .editor-preview .highlight .kn, .editor-preview .highlight .kp, .editor-preview .highlight .kr, .markdown-body .highlight .kc, .markdown-body .highlight .kd, .markdown-body .highlight .kn, .markdown-body .highlight .kp, .markdown-body .highlight .kr, .markdown-reply .highlight .kc, .markdown-reply .highlight .kd, .markdown-reply .highlight .kn, .markdown-reply .highlight .kp, .markdown-reply .highlight .kr {
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .kt, .editor-preview .highlight .kt, .markdown-body .highlight .kt, .markdown-reply .highlight .kt {
+    color: #458;
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .m, .editor-preview .highlight .m, .markdown-body .highlight .m, .markdown-reply .highlight .m {
+    color: #099
+}
+
+.editor-preview-active-side .highlight .s, .editor-preview .highlight .s, .markdown-body .highlight .s, .markdown-reply .highlight .s {
+    color: #d14
+}
+
+.editor-preview-active-side .highlight .n, .editor-preview .highlight .n, .markdown-body .highlight .n, .markdown-reply .highlight .n {
+    color: #333
+}
+
+.editor-preview-active-side .highlight .na, .editor-preview .highlight .na, .markdown-body .highlight .na, .markdown-reply .highlight .na {
+    color: teal
+}
+
+.editor-preview-active-side .highlight .nb, .editor-preview .highlight .nb, .markdown-body .highlight .nb, .markdown-reply .highlight .nb {
+    color: #0086b3
+}
+
+.editor-preview-active-side .highlight .nc, .editor-preview .highlight .nc, .markdown-body .highlight .nc, .markdown-reply .highlight .nc {
+    color: #458;
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .no, .editor-preview .highlight .no, .markdown-body .highlight .no, .markdown-reply .highlight .no {
+    color: teal
+}
+
+.editor-preview-active-side .highlight .ni, .editor-preview .highlight .ni, .markdown-body .highlight .ni, .markdown-reply .highlight .ni {
+    color: purple
+}
+
+.editor-preview-active-side .highlight .ne, .editor-preview-active-side .highlight .nf, .editor-preview .highlight .ne, .editor-preview .highlight .nf, .markdown-body .highlight .ne, .markdown-body .highlight .nf, .markdown-reply .highlight .ne, .markdown-reply .highlight .nf {
+    color: #900;
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .nn, .editor-preview .highlight .nn, .markdown-body .highlight .nn, .markdown-reply .highlight .nn {
+    color: #555
+}
+
+.editor-preview-active-side .highlight .nt, .editor-preview .highlight .nt, .markdown-body .highlight .nt, .markdown-reply .highlight .nt {
+    color: navy
+}
+
+.editor-preview-active-side .highlight .nv, .editor-preview .highlight .nv, .markdown-body .highlight .nv, .markdown-reply .highlight .nv {
+    color: teal
+}
+
+.editor-preview-active-side .highlight .ow, .editor-preview .highlight .ow, .markdown-body .highlight .ow, .markdown-reply .highlight .ow {
+    font-weight: 700
+}
+
+.editor-preview-active-side .highlight .w, .editor-preview .highlight .w, .markdown-body .highlight .w, .markdown-reply .highlight .w {
+    color: #bbb
+}
+
+.editor-preview-active-side .highlight .mf, .editor-preview-active-side .highlight .mh, .editor-preview-active-side .highlight .mi, .editor-preview-active-side .highlight .mo, .editor-preview .highlight .mf, .editor-preview .highlight .mh, .editor-preview .highlight .mi, .editor-preview .highlight .mo, .markdown-body .highlight .mf, .markdown-body .highlight .mh, .markdown-body .highlight .mi, .markdown-body .highlight .mo, .markdown-reply .highlight .mf, .markdown-reply .highlight .mh, .markdown-reply .highlight .mi, .markdown-reply .highlight .mo {
+    color: #099
+}
+
+.editor-preview-active-side .highlight .s2, .editor-preview-active-side .highlight .sb, .editor-preview-active-side .highlight .sc, .editor-preview-active-side .highlight .sd, .editor-preview-active-side .highlight .se, .editor-preview-active-side .highlight .sh, .editor-preview-active-side .highlight .si, .editor-preview-active-side .highlight .sx, .editor-preview .highlight .s2, .editor-preview .highlight .sb, .editor-preview .highlight .sc, .editor-preview .highlight .sd, .editor-preview .highlight .se, .editor-preview .highlight .sh, .editor-preview .highlight .si, .editor-preview .highlight .sx, .markdown-body .highlight .s2, .markdown-body .highlight .sb, .markdown-body .highlight .sc, .markdown-body .highlight .sd, .markdown-body .highlight .se, .markdown-body .highlight .sh, .markdown-body .highlight .si, .markdown-body .highlight .sx, .markdown-reply .highlight .s2, .markdown-reply .highlight .sb, .markdown-reply .highlight .sc, .markdown-reply .highlight .sd, .markdown-reply .highlight .se, .markdown-reply .highlight .sh, .markdown-reply .highlight .si, .markdown-reply .highlight .sx {
+    color: #d14
+}
+
+.editor-preview-active-side .highlight .sr, .editor-preview .highlight .sr, .markdown-body .highlight .sr, .markdown-reply .highlight .sr {
+    color: #009926
+}
+
+.editor-preview-active-side .highlight .s1, .editor-preview .highlight .s1, .markdown-body .highlight .s1, .markdown-reply .highlight .s1 {
+    color: #d14
+}
+
+.editor-preview-active-side .highlight .ss, .editor-preview .highlight .ss, .markdown-body .highlight .ss, .markdown-reply .highlight .ss {
+    color: #990073
+}
+
+.editor-preview-active-side .highlight .bp, .editor-preview .highlight .bp, .markdown-body .highlight .bp, .markdown-reply .highlight .bp {
+    color: #999
+}
+
+.editor-preview-active-side .highlight .vc, .editor-preview-active-side .highlight .vg, .editor-preview-active-side .highlight .vi, .editor-preview .highlight .vc, .editor-preview .highlight .vg, .editor-preview .highlight .vi, .markdown-body .highlight .vc, .markdown-body .highlight .vg, .markdown-body .highlight .vi, .markdown-reply .highlight .vc, .markdown-reply .highlight .vg, .markdown-reply .highlight .vi {
+    color: teal
+}
+
+.editor-preview-active-side .highlight .il, .editor-preview .highlight .il, .markdown-body .highlight .il, .markdown-reply .highlight .il {
+    color: #099
+}
+
+.editor-preview-active-side .highlight .gc, .editor-preview .highlight .gc, .markdown-body .highlight .gc, .markdown-reply .highlight .gc {
+    color: #999;
+    background-color: #eaf2f5
+}
+
+.editor-preview-active-side pre.language-todo, .editor-preview pre.language-todo, .markdown-body pre.language-todo, .markdown-reply pre.language-todo {
+    background: #fb6c53;
+    color: #fff
+}
+
+.editor-preview-active-side pre.language-todo code.language-todo, .editor-preview pre.language-todo code.language-todo, .markdown-body pre.language-todo code.language-todo, .markdown-reply pre.language-todo code.language-todo {
+    color: #fff;
+    text-shadow: none;
+    font-weight: 700
+}
+
+.markdown-reply h1, .markdown-reply h2, .markdown-reply h3, .markdown-reply h4, .markdown-reply h5, .markdown-reply h6 {
+    position: relative;
+    margin-top: .5em;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.4
+}
+
+.markdown-reply h1 {
+    font-size: 1.4em;
+    line-height: 1.2
+}
+
+.markdown-reply h1, .markdown-reply h2 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid #eee
+}
+
+.markdown-reply h2 {
+    font-size: 1.25em;
+    line-height: 1.225
+}
+
+.markdown-reply h3 {
+    font-size: 1.2em;
+    line-height: 1.43
+}
+
+.markdown-reply h4 {
+    font-size: 1.1em
+}
+
+.markdown-reply h5 {
+    font-size: 1em
+}
+
+.markdown-reply h6 {
+    font-size: 1em;
+    color: #777
+}
+
+.markdown-body > h2:first-child {
+    margin-top: .4em
+}
+
+.markdown-body .ui.attached.block.header {
+    border: 1px solid #d3e0e9
+}
+
+.ui.segments > .segment.markdown-body {
+    border-top: 0
+}
+
+.editor-preview-active-side pre > code {
+    font-size: 90%
+}
+
+.content-body a {
+    position: relative;
+    text-decoration: none
+}
+
+.content-body a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+.content-body a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #4485c5;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    top: 1.2em
+}
+
+span.emoji {
+    display: -moz-inline-box;
+    display: inline-block;
+    vertical-align: baseline;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 1em;
+    height: 1em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    text-indent: -9999px
+}
+
+span.emoji-sizer {
+    line-height: .81em;
+    font-size: 1em;
+    margin: -2px 0
+}
+
+span.emoji-outer {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    height: 1em;
+    width: 1em
+}
+
+span.emoji-inner {
+    display: -moz-inline-box;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    vertical-align: baseline;
+    *vertical-align: auto;
+    *zoom: 1
+}
+
+img.emoji {
+    width: 1em;
+    height: 1em
+}
+
+.emoji-picker-container {
+    position: relative
+}
+
+.emoji-picker-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    opacity: .7;
+    z-index: 100;
+    -webkit-transition: none;
+    transition: none;
+    color: #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.emoji-picker-icon.parent-has-scroll {
+    right: 28px
+}
+
+.emoji-picker-icon:hover {
+    opacity: 1
+}
+
+.emoji-wysiwyg-editor:empty:before {
+    content: attr(placeholder);
+    color: #9aa2ab
+}
+
+.emoji-wysiwyg-editor:active:before, .emoji-wysiwyg-editor:focus:before {
+    content: none
+}
+
+.emoji-wysiwyg-editor {
+    padding: 6px;
+    padding-right: 35px;
+    margin-bottom: 0;
+    min-height: 35px;
+    height: 30px;
+    max-height: 284px;
+    overflow: auto;
+    line-height: 17px;
+    border: 1px solid #d2dbe3;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -webkit-user-select: text;
+    word-wrap: break-word
+}
+
+.emoji-wysiwyg-editor.parent-has-scroll {
+    padding-right: 40px
+}
+
+.emoji-wysiwyg-editor.single-line-editor {
+    min-height: 35px;
+    height: inherit
+}
+
+.emoji-wysiwyg-editor img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: -3px 0 0
+}
+
+.emoji-menu {
+    position: absolute;
+    left: 3px;
+    margin-top: 38px;
+    z-index: 999;
+    width: 225px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
+}
+
+.emoji-items-wrap1 {
+    background: #fff;
+    padding: 5px 2px 5px 5px
+}
+
+.emoji-items-wrap1 .emoji-menu-tabs {
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 3px
+}
+
+.emoji-items-wrap1 .emoji-menu-tabs td {
+    text-align: center;
+    color: #fff;
+    line-height: 0
+}
+
+.emoji-menu-tabs .emoji-menu-tab {
+    display: inline-block;
+    width: 24px;
+    height: 29px;
+    background: url("/assets/images/IconsetSmiles.png") no-repeat;
+    background-size: 42px 350px;
+    border: 0
+}
+
+.is_1x .emoji-menu-tabs .emoji-menu-tab {
+    background-image: url("/assets/images/IconsetSmiles_1x.png")
+}
+
+.emoji-menu-tabs .icon-recent {
+    background-position: -9px -306px
+}
+
+.emoji-menu-tabs .icon-recent-selected {
+    background-position: -9px -277px
+}
+
+.emoji-menu-tabs .icon-smile {
+    background-position: -9px -34px
+}
+
+.emoji-menu-tabs .icon-smile-selected {
+    background-position: -9px -5px
+}
+
+.emoji-menu-tabs .icon-flower {
+    background-position: -9px -145px
+}
+
+.emoji-menu-tabs .icon-flower-selected {
+    background-position: -9px -118px
+}
+
+.emoji-menu-tabs .icon-bell {
+    background-position: -9px -89px
+}
+
+.emoji-menu-tabs .icon-bell-selected {
+    background-position: -9px -61px
+}
+
+.emoji-menu-tabs .icon-car {
+    background-position: -9px -196px
+}
+
+.emoji-menu-tabs .icon-car-selected {
+    background-position: -9px -170px
+}
+
+.emoji-menu-tabs .icon-grid {
+    background-position: -9px -248px
+}
+
+.emoji-menu-tabs .icon-grid-selected {
+    background-position: -9px -222px
+}
+
+.emoji-menu-tabs .icon-bell, .emoji-menu-tabs .icon-car, .emoji-menu-tabs .icon-flower, .emoji-menu-tabs .icon-grid, .emoji-menu-tabs .icon-smile {
+    opacity: .7
+}
+
+.emoji-menu-tabs .icon-bell:hover, .emoji-menu-tabs .icon-car:hover, .emoji-menu-tabs .icon-flower:hover, .emoji-menu-tabs .icon-grid:hover, .emoji-menu-tabs .icon-smile:hover {
+    opacity: 1
+}
+
+.emoji-menu .emoji-items-wrap {
+    position: relative;
+    height: 174px;
+    overflow: scroll
+}
+
+.emoji-menu .emoji-items {
+    padding-right: 8px;
+    outline: 0 !important
+}
+
+.emoji-menu img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border: 0 none
+}
+
+.emoji-menu .emoji-items a {
+    margin: -1px 0 0 -1px;
+    padding: 5px;
+    display: block;
+    float: left;
+    border-radius: 2px;
+    border: 0
+}
+
+.emoji-menu .emoji-items a:hover {
+    background-color: #edf2f5
+}
+
+.emoji-menu:after {
+    content: " ";
+    display: block;
+    clear: left
+}
+
+.emoji-menu a .label {
+    display: none
+}
+
+code[class*=language-], pre[class*=language-] {
+    color: #f8f8f2;
+    background: #384548;
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+pre[class*=language-] {
+    padding: 1.5em 35px;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: .3em
+}
+
+:not(pre) > code[class*=language-], pre[class*=language-] {
+    background: #384548
+}
+
+:not(pre) > code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal
+}
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #d4d0ab
+}
+
+.token.punctuation {
+    color: #fefefe
+}
+
+.token.constant, .token.deleted, .token.property, .token.symbol, .token.tag {
+    color: #ffa07a
+}
+
+.token.boolean, .token.number {
+    color: #00e0e0
+}
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+    color: #abe338
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url, .token.variable {
+    color: #00e0e0
+}
+
+.token.atrule, .token.attr-value, .token.function {
+    color: gold
+}
+
+.token.keyword {
+    color: #00e0e0
+}
+
+.token.important, .token.regex {
+    color: gold
+}
+
+.token.bold, .token.important {
+    font-weight: 700
+}
+
+.token.italic {
+    font-style: italic
+}
+
+.token.entity {
+    cursor: help
+}
+
+@media screen and (-ms-high-contrast: active) {
+    code[class*=language-], pre[class*=language-] {
+        color: windowText;
+        background: window
+    }
+
+    :not(pre) > code[class*=language-], pre[class*=language-] {
+        background: window
+    }
+
+    .token.important {
+        background: highlight;
+        color: window;
+        font-weight: 400
+    }
+
+    .token.atrule, .token.attr-value, .token.function, .token.keyword, .token.operator, .token.selector {
+        font-weight: 700
+    }
+
+    .token.attr-value, .token.comment, .token.doctype, .token.function, .token.keyword, .token.operator, .token.property, .token.string {
+        color: highlight
+    }
+
+    .token.attr-value, .token.url {
+        font-weight: 400
+    }
+}
+
+body.swal2-shown {
+    overflow-y: hidden
+}
+
+.swal2-container, body.swal2-iosfix {
+    position: fixed;
+    left: 0;
+    right: 0
+}
+
+.swal2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: transparent;
+    z-index: 1060
+}
+
+.swal2-container.swal2-fade {
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s
+}
+
+.swal2-container.swal2-shown {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.swal2-modal {
+    background-color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    position: relative
+}
+
+.swal2-modal:focus {
+    outline: none
+}
+
+.swal2-modal.swal2-loading {
+    overflow-y: hidden
+}
+
+.swal2-modal .swal2-title {
+    color: #595959;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 0 0 .4em;
+    padding: 0;
+    display: block
+}
+
+.swal2-modal .swal2-spacer {
+    height: 10px;
+    color: transparent;
+    border: 0
+}
+
+.swal2-modal .swal2-styled {
+    border: 0;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 5px;
+    padding: 10px 32px
+}
+
+.swal2-modal .swal2-styled:not(.swal2-loading)[disabled] {
+    opacity: .4;
+    cursor: no-drop
+}
+
+.swal2-modal .swal2-styled.swal2-loading {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: -2px 30px;
+    vertical-align: top;
+    background-color: transparent !important;
+    color: transparent;
+    cursor: default;
+    border-radius: 100%;
+    -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+    animation: rotate-loading 1.5s linear 0s infinite normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.swal2-modal .swal2-styled + .swal2-styled {
+    margin-top: 15px
+}
+
+.swal2-modal :not(.swal2-styled).swal2-loading:after {
+    display: inline-block;
+    content: "";
+    margin-left: 5px;
+    vertical-align: -1px;
+    height: 6px;
+    width: 6px;
+    border: 3px solid #999;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+    animation: rotate-loading 1.5s linear 0s infinite normal
+}
+
+.swal2-modal .swal2-image {
+    margin: 20px auto;
+    max-width: 100%
+}
+
+.swal2-modal .swal2-close {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: serif;
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    cursor: pointer;
+    color: #ccc;
+    -webkit-transition: color .1s ease;
+    transition: color .1s ease
+}
+
+.swal2-modal .swal2-close:hover {
+    color: #d55
+}
+
+.swal2-modal > .swal2-checkbox, .swal2-modal > .swal2-file, .swal2-modal > .swal2-input, .swal2-modal > .swal2-radio, .swal2-modal > .swal2-select, .swal2-modal > .swal2-textarea {
+    display: none
+}
+
+.swal2-modal .swal2-content {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    color: #545454
+}
+
+.swal2-modal .swal2-checkbox, .swal2-modal .swal2-file, .swal2-modal .swal2-input, .swal2-modal .swal2-radio, .swal2-modal .swal2-select, .swal2-modal .swal2-textarea {
+    margin: 20px auto
+}
+
+.swal2-modal .swal2-file, .swal2-modal .swal2-input, .swal2-modal .swal2-textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    font-size: 18px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06);
+    -webkit-transition: border-color box-shadow .3s;
+    transition: border-color box-shadow .3s
+}
+
+.swal2-modal .swal2-file.swal2-inputerror, .swal2-modal .swal2-input.swal2-inputerror, .swal2-modal .swal2-textarea.swal2-inputerror {
+    border-color: #f06e57 !important
+}
+
+.swal2-modal .swal2-file:focus, .swal2-modal .swal2-input:focus, .swal2-modal .swal2-textarea:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 3px #c4e6f5;
+    box-shadow: 0 0 3px #c4e6f5;
+    border: 1px solid #b4dbed
+}
+
+.swal2-modal .swal2-file:focus::-webkit-input-placeholder, .swal2-modal .swal2-input:focus::-webkit-input-placeholder, .swal2-modal .swal2-textarea:focus::-webkit-input-placeholder {
+    -webkit-transition: opacity .3s ease .03s;
+    transition: opacity .3s ease .03s;
+    opacity: .8
+}
+
+.swal2-modal .swal2-file:focus:-ms-input-placeholder, .swal2-modal .swal2-file:focus::-ms-input-placeholder, .swal2-modal .swal2-input:focus:-ms-input-placeholder, .swal2-modal .swal2-input:focus::-ms-input-placeholder, .swal2-modal .swal2-textarea:focus:-ms-input-placeholder, .swal2-modal .swal2-textarea:focus::-ms-input-placeholder {
+    -webkit-transition: opacity .3s ease .03s;
+    transition: opacity .3s ease .03s;
+    opacity: .8
+}
+
+.swal2-modal .swal2-file:focus::placeholder, .swal2-modal .swal2-input:focus::placeholder, .swal2-modal .swal2-textarea:focus::placeholder {
+    -webkit-transition: opacity .3s ease .03s;
+    transition: opacity .3s ease .03s;
+    opacity: .8
+}
+
+.swal2-modal .swal2-file::-webkit-input-placeholder, .swal2-modal .swal2-input::-webkit-input-placeholder, .swal2-modal .swal2-textarea::-webkit-input-placeholder {
+    color: #e6e5e5
+}
+
+.swal2-modal .swal2-file:-ms-input-placeholder, .swal2-modal .swal2-file::-ms-input-placeholder, .swal2-modal .swal2-input:-ms-input-placeholder, .swal2-modal .swal2-input::-ms-input-placeholder, .swal2-modal .swal2-textarea:-ms-input-placeholder, .swal2-modal .swal2-textarea::-ms-input-placeholder {
+    color: #e6e5e5
+}
+
+.swal2-modal .swal2-file::placeholder, .swal2-modal .swal2-input::placeholder, .swal2-modal .swal2-textarea::placeholder {
+    color: #e6e5e5
+}
+
+.swal2-modal .swal2-range input {
+    float: left;
+    width: 80%
+}
+
+.swal2-modal .swal2-range output {
+    float: right;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center
+}
+
+.swal2-modal .swal2-range input, .swal2-modal .swal2-range output {
+    height: 43px;
+    line-height: 43px;
+    vertical-align: middle;
+    margin: 20px auto;
+    padding: 0
+}
+
+.swal2-modal .swal2-input {
+    height: 43px;
+    padding: 0 12px
+}
+
+.swal2-modal .swal2-input[type=number] {
+    max-width: 150px
+}
+
+.swal2-modal .swal2-file {
+    font-size: 20px
+}
+
+.swal2-modal .swal2-textarea {
+    height: 108px;
+    padding: 12px
+}
+
+.swal2-modal .swal2-select {
+    color: #545454;
+    font-size: inherit;
+    padding: 5px 10px;
+    min-width: 40%;
+    max-width: 100%
+}
+
+.swal2-modal .swal2-radio {
+    border: 0
+}
+
+.swal2-modal .swal2-radio label:not(:first-child) {
+    margin-left: 20px
+}
+
+.swal2-modal .swal2-radio input, .swal2-modal .swal2-radio span {
+    vertical-align: middle
+}
+
+.swal2-modal .swal2-radio input {
+    margin: 0 3px 0 0
+}
+
+.swal2-modal .swal2-checkbox {
+    color: #545454
+}
+
+.swal2-modal .swal2-checkbox input, .swal2-modal .swal2-checkbox span {
+    vertical-align: middle
+}
+
+.swal2-modal .swal2-validationerror {
+    background-color: #f0f0f0;
+    margin: 0 -20px;
+    overflow: hidden;
+    padding: 10px;
+    color: #807f7f;
+    font-size: 16px;
+    font-weight: 300;
+    display: none
+}
+
+.swal2-modal .swal2-validationerror:before {
+    content: "!";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ea7d7d;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    margin-right: 10px
+}
+
+@supports (-ms-accelerator:true) {
+    .swal2-range input {
+        width: 100% !important
+    }
+
+    .swal2-range output {
+        display: none
+    }
+}
+
+@media (-ms-high-contrast: active),(-ms-high-contrast: none) {
+    .swal2-range input {
+        width: 100% !important
+    }
+
+    .swal2-range output {
+        display: none
+    }
+}
+
+.swal2-icon {
+    width: 80px;
+    height: 80px;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    margin: 20px auto 30px;
+    padding: 0;
+    position: relative;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.swal2-icon.swal2-error {
+    border-color: #f27474
+}
+
+.swal2-icon.swal2-error .x-mark {
+    position: relative;
+    display: block
+}
+
+.swal2-icon.swal2-error .line {
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: #f27474;
+    display: block;
+    top: 37px;
+    border-radius: 2px
+}
+
+.swal2-icon.swal2-error .line.left {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 17px
+}
+
+.swal2-icon.swal2-error .line.right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 16px
+}
+
+.swal2-icon.swal2-warning {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #f8bb86;
+    border-color: #facea8
+}
+
+.swal2-icon.swal2-info, .swal2-icon.swal2-warning {
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center
+}
+
+.swal2-icon.swal2-info {
+    font-family: Open Sans, sans-serif;
+    color: #3fc3ee;
+    border-color: #9de0f6
+}
+
+.swal2-icon.swal2-question {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #87adbd;
+    border-color: #c9dae1;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center
+}
+
+.swal2-icon.swal2-success {
+    border-color: #a5dc86
+}
+
+.swal2-icon.swal2-success:after, .swal2-icon.swal2-success:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.swal2-icon.swal2-success:before {
+    border-radius: 120px 0 0 120px;
+    top: -7px;
+    left: -33px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 60px 60px;
+    transform-origin: 60px 60px
+}
+
+.swal2-icon.swal2-success:after {
+    border-radius: 0 120px 120px 0;
+    top: -11px;
+    left: 30px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 60px;
+    transform-origin: 0 60px
+}
+
+.swal2-icon.swal2-success .placeholder {
+    width: 80px;
+    height: 80px;
+    border: 4px solid hsla(98, 55%, 69%, .2);
+    border-radius: 50%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 2
+}
+
+.swal2-icon.swal2-success .fix {
+    width: 7px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    left: 28px;
+    top: 8px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.swal2-icon.swal2-success .line {
+    height: 5px;
+    background-color: #a5dc86;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2
+}
+
+.swal2-icon.swal2-success .line.tip {
+    width: 25px;
+    left: 14px;
+    top: 46px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.swal2-icon.swal2-success .line.long {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.swal2-progresssteps {
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding: 0
+}
+
+.swal2-progresssteps li {
+    display: inline-block;
+    position: relative
+}
+
+.swal2-progresssteps .swal2-progresscircle {
+    background: #3085d6;
+    border-radius: 2em;
+    color: #fff;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+    z-index: 20
+}
+
+.swal2-progresssteps .swal2-progresscircle:first-child {
+    margin-left: 0
+}
+
+.swal2-progresssteps .swal2-progresscircle:last-child {
+    margin-right: 0
+}
+
+.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep {
+    background: #3085d6
+}
+
+.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progresscircle, .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progressline {
+    background: #add8e6
+}
+
+.swal2-progresssteps .swal2-progressline {
+    background: #3085d6;
+    height: .4em;
+    margin: 0 -1px;
+    z-index: 10
+}
+
+[class^=swal2] {
+    -webkit-tap-highlight-color: transparent
+}
+
+@-webkit-keyframes showSweetAlert {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+    45% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+    80% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95)
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes showSweetAlert {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+    45% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+    80% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95)
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes hideSweetAlert {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+}
+
+@keyframes hideSweetAlert {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        opacity: 0
+    }
+}
+
+.swal2-show {
+    -webkit-animation: showSweetAlert .3s;
+    animation: showSweetAlert .3s
+}
+
+.swal2-show.swal2-noanimation {
+    -webkit-animation: none;
+    animation: none
+}
+
+.swal2-hide {
+    -webkit-animation: hideSweetAlert .15s forwards;
+    animation: hideSweetAlert .15s forwards
+}
+
+.swal2-hide.swal2-noanimation {
+    -webkit-animation: none;
+    animation: none
+}
+
+@-webkit-keyframes animate-success-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+    }
+    to {
+        width: 25px;
+        left: 14px;
+        top: 45px
+    }
+}
+
+@keyframes animate-success-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+    }
+    to {
+        width: 25px;
+        left: 14px;
+        top: 45px
+    }
+}
+
+@-webkit-keyframes animate-success-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    84% {
+        width: 55px;
+        right: 0;
+        top: 35px
+    }
+    to {
+        width: 47px;
+        right: 8px;
+        top: 38px
+    }
+}
+
+@keyframes animate-success-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    84% {
+        width: 55px;
+        right: 0;
+        top: 35px
+    }
+    to {
+        width: 47px;
+        right: 8px;
+        top: 38px
+    }
+}
+
+@-webkit-keyframes rotatePlaceholder {
+    0% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    5% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    12% {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+    }
+    to {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+    }
+}
+
+@keyframes rotatePlaceholder {
+    0% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    5% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    12% {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+    }
+    to {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+    }
+}
+
+.animate-success-tip {
+    -webkit-animation: animate-success-tip .75s;
+    animation: animate-success-tip .75s
+}
+
+.animate-success-long {
+    -webkit-animation: animate-success-long .75s;
+    animation: animate-success-long .75s
+}
+
+.swal2-success.animate:after {
+    -webkit-animation: rotatePlaceholder 4.25s ease-in;
+    animation: rotatePlaceholder 4.25s ease-in
+}
+
+@-webkit-keyframes animate-error-icon {
+    0% {
+        -webkit-transform: rotateX(100deg);
+        transform: rotateX(100deg);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1
+    }
+}
+
+@keyframes animate-error-icon {
+    0% {
+        -webkit-transform: rotateX(100deg);
+        transform: rotateX(100deg);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1
+    }
+}
+
+.animate-error-icon {
+    -webkit-animation: animate-error-icon .5s;
+    animation: animate-error-icon .5s
+}
+
+@-webkit-keyframes animate-x-mark {
+    0% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+    }
+    80% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        margin-top: -6px
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        margin-top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animate-x-mark {
+    0% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+    }
+    80% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        margin-top: -6px
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        margin-top: 0;
+        opacity: 1
+    }
+}
+
+.animate-x-mark {
+    -webkit-animation: animate-x-mark .5s;
+    animation: animate-x-mark .5s
+}
+
+@-webkit-keyframes pulse-warning {
+    0% {
+        border-color: #f8d486
+    }
+    to {
+        border-color: #f8bb86
+    }
+}
+
+@keyframes pulse-warning {
+    0% {
+        border-color: #f8d486
+    }
+    to {
+        border-color: #f8bb86
+    }
+}
+
+.pulse-warning {
+    -webkit-animation: pulse-warning .75s infinite alternate;
+    animation: pulse-warning .75s infinite alternate
+}
+
+@-webkit-keyframes rotate-loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes rotate-loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+div.tagsinput {
+    background: #fff;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, .15);
+    height: 100px;
+    overflow-y: auto;
+    padding: 7px 10px 4px;
+    width: 100%
+}
+
+div.tagsinput span.tag {
+    background: #cde69c;
+    border: 1px solid #a5d24a;
+    color: #638421;
+    display: block;
+    float: left;
+    font-family: helvetica;
+    font-size: 13px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    margin-left: 5px;
+    text-decoration: none;
+    webkit-border-radius: 2px
+}
+
+div.tagsinput span.tag a {
+    color: #82ad2b;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none
+}
+
+div.tagsinput input {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #000;
+    font-family: helvetica;
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    outline: 0;
+    padding: 5px;
+    width: 80px
+}
+
+div.tagsinput div {
+    display: block;
+    float: left;
+    width: 350px
+}
+
+.tags_clear {
+    clear: both;
+    height: 0;
+    width: 100%
+}
+
+.not_valid {
+    background: #fbd8db !important;
+    color: #90111a !important
+}
+
+#tags-field_tag {
+    border: none;
+    color: #7f7f7f !important;
+    padding-left: 6px
+}
+
+#toc {
+    padding: 22px 4px
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+#toc li {
+    line-height: 28px
+}
+
+#toc a {
+    text-decoration: none;
+    display: block
+}
+
+#toc .toc-h2 {
+    padding-left: 10px
+}
+
+#toc .toc-h3 {
+    padding-left: 20px
+}
+
+#toc .toc-active {
+    background: #ccc
+}
+
+#toc .tocify li, #toc .tocify ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 30px
+}
+
+#toc .tocify-header {
+    text-indent: 0;
+    padding: 0 8px
+}
+
+#toc .tocify-subheader {
+    text-indent: 10px;
+    display: block
+}
+
+#toc .tocify-subheader li {
+    font-size: 13px
+}
+
+#toc .tocify-subheader .tocify-subheader {
+    text-indent: 30px
+}
+
+#toc .tocify-subheader .tocify-subheader .tocify-subheader {
+    text-indent: 40px
+}
+
+#toc .nav-list .nav-header, #toc .nav-list > li > a {
+    margin: 0
+}
+
+#toc .nav-list > li > a {
+    padding: 5px;
+    color: inherit
+}
+
+#toc li.tocify-item.active, #toc li.tocify-item:hover {
+    background: #eff1f1
+}
+
+@-webkit-keyframes fluidboxLoading {
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+        transform: translate(-50%, -50%) rotateX(0) rotateY(0)
+    }
+    50% {
+        -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+        transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0)
+    }
+    to {
+        -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+        transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg)
+    }
+}
+
+@keyframes fluidboxLoading {
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+        transform: translate(-50%, -50%) rotateX(0) rotateY(0)
+    }
+    50% {
+        -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+        transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0)
+    }
+    to {
+        -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+        transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg)
+    }
+}
+
+.fluidbox {
+    outline: none
+}
+
+.fluidbox__overlay {
+    background-color: hsla(0, 0%, 100%, .85);
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.fluidbox--opened .fluidbox__overlay {
+    pointer-events: auto
+}
+
+.fluidbox__wrap {
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.fluidbox--closed .fluidbox__thumb, .fluidbox__thumb {
+    -webkit-transition: opacity 0s ease-in-out 0s;
+    transition: opacity 0s ease-in-out 0s
+}
+
+.fluidbox__ghost {
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    -webkit-transition: opacity 0s 0s, -webkit-transform .5s 0s;
+    transition: opacity 0s 0s, -webkit-transform .5s 0s;
+    transition: opacity 0s 0s, transform .5s 0s;
+    transition: opacity 0s 0s, transform .5s 0s, -webkit-transform .5s 0s;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 0 30px #ccc;
+    box-shadow: 0 0 30px #ccc;
+    opacity: 0
+}
+
+.fluidbox--opened .fluidbox__ghost {
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out
+}
+
+.fluidbox--closed .fluidbox__ghost {
+    -webkit-transition: opacity 0s .5s, -webkit-transform .5s 0s;
+    transition: opacity 0s .5s, -webkit-transform .5s 0s;
+    transition: opacity 0s .5s, transform .5s 0s;
+    transition: opacity 0s .5s, transform .5s 0s, -webkit-transform .5s 0s
+}
+
+.fluidbox__loader {
+    opacity: 0;
+    -webkit-perspective: 200px;
+    perspective: 200px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.fluidbox__loader:before {
+    background-color: hsla(0, 0%, 100%, .85);
+    content: "";
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    padding-bottom: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+.fluidbox--loading .fluidbox__loader {
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out .5s;
+    transition: opacity .5s ease-in-out .5s
+}
+
+.fluidbox--loading .fluidbox__loader:before {
+    -webkit-animation: fluidboxLoading 1s 0s infinite ease-in-out forwards;
+    animation: fluidboxLoading 1s 0s infinite ease-in-out forwards
+}
+
+a.fluidbox {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in
+}
+
+#nprogress {
+    pointer-events: none
+}
+
+#nprogress .bar {
+    background: #29d;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px
+}
+
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    -webkit-box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    opacity: 1;
+    -webkit-transform: rotate(3deg) translateY(-4px);
+    transform: rotate(3deg) translateY(-4px)
+}
+
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 15px;
+    right: 15px
+}
+
+#nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+    -webkit-animation: nprogress-spinner .4s linear infinite;
+    animation: nprogress-spinner .4s linear infinite
+}
+
+.nprogress-custom-parent {
+    overflow: hidden;
+    position: relative
+}
+
+.nprogress-custom-parent #nprogress .bar, .nprogress-custom-parent #nprogress .spinner {
+    position: absolute
+}
+
+@-webkit-keyframes nprogress-spinner {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn)
+    }
+}
+
+@keyframes nprogress-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
 }
